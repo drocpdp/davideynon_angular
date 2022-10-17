@@ -1,1 +1,128 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+  padding-top: 5px;
+  background-color:#f5efe0;
+  margin: 0; 
+  font-family: 'Didot','Geneva','Verdana', 'Helvetica', sans-serif; 
+}
+
+.top-menu {
+  padding-top: 5px;
+  /*background: #FFFFFF;*/
+  text-align: center;
+  text-weight: bold;
+}
+
+.top-title{
+  font-size: 70px; 
+}
+
+.display-container{
+  width: 100%;
+  height: 300px;
+  align: center;
+  /*background: #C0C0C0;*/
+  background: white;
+  display: table;
+  box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .2), 0 2px 8px 0 rgba(0, 0, 0, .14), 0 4px 8px -1px rgba(0, 0, 0, .12);  
+}
+.display-content-container{
+  display: table-row;
+  width: auto;
+  align: center;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, 200px); 
+}
+.display-content-image{
+  display: table-cell;
+  width: auto;
+  align: center;
+}
+.display-content-content{
+  display: table-cell;
+  width: auto;
+  align: center;
+  vertical-align: top;
+  position: center;
+  padding-left: 20px;
+}
+.display-content-project-name{
+  text-align: center;
+  font-size: 15px;
+}
+.display-long-description{
+  font-size: 14px;
+  width: auto;
+  text-align: justify;
+  word-wrap: break-word;
+  padding-right: 125px;
+}
+.display-project-url{
+  font-size: 18px;
+  text-align: left;
+  padding-top: 10px;
+}
+.display-project-keywords{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 10px;
+}
+.project-cards {
+  display: grid;  
+  width: auto;
+  align: center;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .2), 0 2px 8px 0 rgba(0, 0, 0, .14), 0 4px 8px -1px rgba(0, 0, 0, .12);
+  border-radius: 10px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, 250px);  
+}
+.project-card{
+  display: grid;
+  width: auto;
+  align: center;
+  padding: 20px 20px 20px 20px;
+  background: white;
+  box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .2), 0 2px 8px 0 rgba(0, 0, 0, .14), 0 4px 8px -1px rgba(0, 0, 0, .12);
+}
+.project-card:hover{
+  background-color: #D3D3D3;
+}
+
+.project-image {
+  align: center;
+}
+
+.project-title {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 10px;
+}
+.project-short-description {
+  font-size: 12px;
+  padding: 10px 10px;
+}
+.project-keywords{
+  font-size: 14px;
+  font-weight: bold;
+  text-align: auto;
+
+}
+.display-content-container{
+  display: block;
+}
+.display-title{
+  text-align: center;
+}
+
+.bottom-menu {
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+}
+

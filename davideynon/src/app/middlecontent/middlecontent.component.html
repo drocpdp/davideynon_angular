@@ -1,0 +1,30 @@
+
+
+<div class="display-container">
+<div class="display-content-project-name" #displayTitle><h2>Project: {{ displayProject.name }}</h2></div>
+    <div class="display-content-container">
+        <div class="display-content-image">
+            <img src="https://via.placeholder.com/200">
+        </div>
+        <div class="display-content-content">
+            <div class="display-long-description">{{ displayProject.longDescription }}</div>
+            <div class="display-project-url"><a href="{{displayProject.projectUrl}}" target="_blank">{{ displayProject.projectUrl }}</a></div>
+            <div class="display-project-keywords">{{ displayProject.keywords }}</div>
+        </div>
+    </div>
+
+</div>
+
+<div class="project-cards">
+    <div *ngFor="let project of projects" class="project-card" (click)='clickProject(project)' #projectSelected>
+        <div class="project-title">{{ project.name }}</div>
+        <div class="project-image">
+            <img src="{{ project.projectImageSource }}" alt="not found image" />
+        </div>
+        <div class="project-short-description">{{ project.shortDescription }}</div>
+        ---
+        <div class="project-keywords"> {{ project.keywords }}</div><br/>
+    </div>
+
+</div>
+
