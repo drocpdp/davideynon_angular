@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { TopmenuComponent } from './topmenu/topmenu.component';
 import { BottommenuComponent } from './bottommenu/bottommenu.component';
-import { MiddlecontentComponent } from './middlecontent/middlecontent.component';
+import { PROJECTS } from '../db-data';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +10,13 @@ import { MiddlecontentComponent } from './middlecontent/middlecontent.component'
 })
 export class AppComponent {
   title = 'davideynon';
-}
+
+  projects = PROJECTS;
+  selectedProject = PROJECTS[0];
+
+  clickedProject(proj:any){
+    this.selectedProject = proj;
+  }
+
+  };
+
