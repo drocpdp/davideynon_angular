@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { PROJECTS } from '../../db-data';
 
 @Component({
@@ -17,6 +17,9 @@ export class LandingpageComponent implements OnInit {
 
   projects = PROJECTS;
   selectedProject = PROJECTS[0];
+
+  @Input()
+  directedProject: any;
 
   clickedProject(proj:any){
     this.selectedProject = proj;
