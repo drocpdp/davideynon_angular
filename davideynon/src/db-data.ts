@@ -77,6 +77,6 @@ export const PROJECTS: any = [
         longDescription2:'Companies include Experian Marketing Services, OpenX, HUGE Inc (Clients include Pepsi, Target, Maybelline, Four Seasons Hotels), Beachbody, among others.',
         longDescription3:'Achievements include marked increases in product turnaround, product robustness, impactful decrease in defects, increased relationships between all parties: Development, QA, Business, Upper Management, and most importantly, customers.',
         longDescription4:'Test Automation, Test Framework Development, Load Testing, Database Testing, Full Stack Software Development.',        
-        keywords: "Python3, Selenium, Java, C++, WebDriver, etc, etc"
+        keywords: "Python3, Java, C++, Angular, Javascript, HTML5, Selenium, WebDriver, MySQL, SQL Server, Atlassian Jira, Jenkins, Nginx, Docker, Amazon EC2, and more"
     }
 ];
