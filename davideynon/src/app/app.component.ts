@@ -1,7 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { TopmenuComponent } from './topmenu/topmenu.component';
-import { BottommenuComponent } from './bottommenu/bottommenu.component';
-import { PROJECTS } from '../db-data';
+import { LandingpageComponent } from './landingpage/landingpage.component';
+
 
 @Component({
   selector: 'app-root',
@@ -9,14 +8,5 @@ import { PROJECTS } from '../db-data';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'davideynon';
-
-  projects = PROJECTS;
-  selectedProject = PROJECTS[0];
-
-  clickedProject(proj:any){
-    this.selectedProject = proj;
-  }
-
   };
 
