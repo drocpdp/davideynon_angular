@@ -31,7 +31,7 @@
 </div>
 
 <div class="project-cards">
-    <div *ngFor="let project of projects.slice(1)" class="project-card" (click)='clickedProject(project)'>
+    <div *ngFor="let project of projects.slice(1)" id="project-card-{{ project.id }}" class="project-card" (click)='clickedProject(project)'>
         <div class="project-title">{{ project.name }}</div>
         <div class="project-image">
             <img class="project-cards-image" src="{{ project.projectImageSource }}" alt="not found image" />
