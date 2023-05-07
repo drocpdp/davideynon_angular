@@ -19,18 +19,17 @@ export class LandingpageComponent implements OnInit {
   selectedProject: any;
 
   ngOnInit(): void {
-    // get url parameter
-    this.projectIdx = this.route.snapshot.paramMap.get('project');
+    // default
+    this.projectIdx = 0;
 
-    console.log(this.projectIdx)    
+    // get url parameter
+    const param = this.route.snapshot.paramMap.get('project');
+
     // root url
-    if (!this.projectIdx){
-      this.projectIdx = 0;
-    }
-    if (this.projectIdx === 'olympic'){
+    if (param === 'olympic'){
       this.projectIdx = 1;
     }
-    if (this.projectIdx === 'popup'){
+    if (param === 'popup'){
       this.projectIdx = 2;
     }
     this.selectedProject = PROJECTS[this.projectIdx];
