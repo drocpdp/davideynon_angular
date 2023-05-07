@@ -6,10 +6,9 @@ import { PopupComponent } from './popup/popup.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
+  { path: ':project', component: LandingpageComponent },
   { path: '', component: LandingpageComponent },
-  { path: 'olympic', component: OlympicComponent },
-  { path: 'popup', component: PopupComponent },
-  { path: '**', pathMatch: 'full', component: PagenotfoundComponent },
+  //{ path: '**', pathMatch: 'full', component: PagenotfoundComponent },
   
 ];
 
