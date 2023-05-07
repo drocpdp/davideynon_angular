@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { TopmenuComponent } from './topmenu/topmenu.component';
 import { BottommenuComponent } from './bottommenu/bottommenu.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
+import { DisplayContainerComponent } from './landingpage/display-container/display-container.component';
+import { ProjectCardsComponent } from './landingpage/project-cards/project-cards.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
     TopmenuComponent,
     BottommenuComponent,
     LandingpageComponent,
+    DisplayContainerComponent,
+    ProjectCardsComponent,
   ],
   imports: [
     BrowserModule,

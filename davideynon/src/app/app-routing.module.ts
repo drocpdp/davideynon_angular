@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingpageComponent } from './landingpage/landingpage.component';
-import { OlympicComponent } from './olympic/olympic.component';
-import { PopupComponent } from './popup/popup.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { ProjectGuard } from './project.guard';
 
-const routes: Routes = [
-  { path: '', component: LandingpageComponent },
-  { path: 'olympic', component: OlympicComponent },
-  { path: 'popup', component: PopupComponent },
-  { path: '**', pathMatch: 'full', component: PagenotfoundComponent },
-  
+
+const routes: Routes = [  
+  { path: ':project', component: LandingpageComponent, canActivate: [ProjectGuard] },
+  { path: '', component: LandingpageComponent },  
+  { path: '**', pathMatch: 'prefix', component: PagenotfoundComponent },    
 ];
 
 @NgModule({
