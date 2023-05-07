@@ -1,0 +1,24 @@
+
+<div class="display-container"> 
+    <div id="display-container-project-name" class="display-content-project-name">{{ selectedProject.name }}</div>
+    
+    <div class="display-content-content-container-grid">
+        <div class="display-content-image-container">
+            <img id="display-container-content-image" class="display-content-large-image" src="{{ selectedProject.projectImageSource }}">
+        </div>
+        <div class="display-content-content-container">
+            <div id="display-container-content-long-description" class="display-content-long-description">{{ selectedProject.longDescription }}</div>
+            <div *ngIf="selectedProject.longDescription2" id="display-container-content-long-description-2" 
+                class="display-content-long-description">{{ selectedProject.longDescription2 }}
+            </div>
+            <div *ngIf="selectedProject.longDescription3" id="display-container-content-long-description-3" 
+                class="display-content-long-description">{{ selectedProject.longDescription3 }}
+            </div>
+            <div *ngIf="selectedProject.longDescription4" id="display-container-content-long-description-4" 
+                class="display-content-long-description">{{ selectedProject.longDescription4 }}
+            </div>
+            <div class="display-content-project-url-container" id="display-container-content-url"><a class="display-content-project-url" href="{{selectedProject.projectUrl}}" target="_blank">{{ selectedProject.projectUrl }}</a></div>
+            <div class="display-content-project-keywords" id="display-container-content-project-keywords">{{ selectedProject.keywords }}</div>            
+        </div>
+    </div>
+</div>

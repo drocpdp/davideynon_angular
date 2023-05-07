@@ -1,0 +1,15 @@
+<div class="project-cards">
+    <div 
+        *ngFor="let project of allProjects.slice(1)" 
+        id="project-card-{{ project.id }}" 
+        class="project-card"
+        (click)="onClickProjectCard(project)">
+        <div class="project-title">{{ project.name }}</div>
+        <div class="project-image">
+            <img class="project-cards-image" src="{{ project.projectImageSource }}" alt="not found image" />
+        </div>
+        <div class="project-short-description">{{ project.shortDescription }}</div>
+        ---
+        <div class="project-keywords"> {{ project.keywords }}</div><br/>
+    </div>
+</div>
